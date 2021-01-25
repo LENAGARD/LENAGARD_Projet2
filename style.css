@@ -13,7 +13,6 @@ body {
 
 .logo {
     grid-area: logo;
-    padding: 0 35px;
     height: 45px;
     width: 97px;
 }
@@ -45,11 +44,15 @@ a {
     text-decoration: none;
 }
 
-/* Responsive Header */
+/* Responsive header */
 @media screen and (min-width: 601px) {
     .header {
       grid-template-columns: auto 1fr auto auto;
       grid-template-areas: "logo . navbar button";
+    }
+
+    .logo {
+    padding: 0 0;
     }
 
     .navlink:hover {
@@ -69,8 +72,97 @@ a {
       width: 100%;
     }
 
+    .logo {
+        padding: 0 35px;
+        }
+  
     .navlink:hover {
       border-bottom: 3px solid #0065fc;
     }
   }
-  
+
+/* Main */
+
+.main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 16px;
+}
+     /* Main title */
+    .main_title_1 {
+        font-size: 20px;
+        margin: 0 0;
+    }
+
+    .main_subtitle {
+    margin: 10px 0;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    /* Main search */
+
+    .main_search {
+    display: inline-flex;
+    }    
+
+    .map_marker_icon {
+        background-color: #f2f2f2;
+        padding: 16px 20px;
+        border-radius: 16px 0 0 16px;
+    }
+    
+    .input_search {
+        border-right: none;
+        border-left: none;
+        border-top: #f2f2f2 1px solid;
+        border-bottom: #f2f2f2 1px solid;
+        padding: 16px 20px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .button_search {
+        background-color: #0065fc;
+        color: #ffff;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        padding: 16px 20px;
+        cursor: pointer;
+    }
+
+
+    /* Search icon responsive*/
+    @media screen and (min-width: 601px) {
+        .form_icon {
+            display: none;
+        }
+        .button_search {
+            border-radius: 0 16px 16px 0;
+        }
+        .input_search {
+            width: 200px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .main_search {
+            width: 100%;
+        }
+        .input_search {
+            width: 100%;
+        }
+        .text_search {
+            display: none;
+        }
+        .button_search {
+            border-radius: 16px 16px 16px 16px;
+        }
+    }
+
+    
+   
