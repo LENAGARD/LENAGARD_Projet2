@@ -191,6 +191,11 @@ a {
         cursor: pointer;
     }
    
+    .buttons_filter:hover {
+        background-color: #f3f8ff;
+        transform: scale(1.02);
+      }
+
     .icons_filter {
         display: flex;
         align-items: center;
@@ -208,6 +213,114 @@ a {
 
     .buttons_description {
         margin: 0 16px;
-        }   
+    }   
 
+        /* Main number result */
+        .number_result {
+            display: flex;
+            align-items: center;
+        }
     
+        .icon_result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 24px;
+            width: 24px;
+            border-radius: 12px;
+            border: solid 1px #deebff;
+            margin-right: 16px;
+          }
+    
+          .icon_result_m {
+            color: #0065fc;
+          }
+    
+        /* Main hostings */
+        #main_hostings {
+            display: grid;
+            column-gap: 40px;
+            grid-template-columns: 2fr 1fr;
+        }
+            /* Hostings */
+            .hostings, .hostings_popular {
+                background-color: #f2f2f2;
+                border-radius: 24px;
+                padding: 40px;
+            }
+
+            .hostings_articles {
+                display: grid;
+                column-gap: 32px;
+                row-gap: 32px;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+                 /* Article */
+                 .hostings_card {
+                    background-color: #fff;
+                    padding: 6px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
+
+                .hostings_card:hover {
+                    transform: scale(1.02);
+                }
+
+                .hostings_card_figure {
+                    margin: 0;
+                }
+                
+                .hostings_card_figure_image {
+                    height: 115px;
+                    width: 100%;
+                    border-radius: 16px 16px 0 0;
+                }
+
+                .star_on {
+                    color: #0065fc;
+                }
+                  
+                .star_off {
+                    color: #d9d9d9;
+                }
+
+                .hostings_viewmore {
+                    display: block;
+                    font-weight: bold;
+                    padding-top: 16px;
+                  }
+
+            /* Most popular */
+            .hostings_card_popular {
+                background-color: #fff;
+                padding: 6px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .hostings_popular_articles {
+                display: grid;
+                row-gap: 32px;
+                grid-template-rows: 150px 150px 150px;
+            }  
+
+            .hostings_popular_title {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                /* Article */
+                .popular_card {
+                    display: flex;
+                    height: 100%;
+                } 
+
+   
+                .hostings_popular_card_image {
+                    border-radius: 16px 0 0 16px;
+                    width: 125px;
+                    height: 100%;
+                }
+     
