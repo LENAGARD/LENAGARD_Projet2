@@ -52,7 +52,7 @@ a {
     }
 
     .logo {
-    padding: 0 0;
+        padding: 0 0;
     }
 
     .navlink:hover {
@@ -95,7 +95,7 @@ a {
     }
 
     .main_subtitle {
-    margin: 10px 0;
+        margin: 10px 0;
     }
 
     h1 {
@@ -105,7 +105,8 @@ a {
     /* Main search */
 
     .main_search {
-    display: inline-flex;
+        display: inline-flex;
+        margin-top: 16px;
     }    
 
     .map_marker_icon {
@@ -163,6 +164,50 @@ a {
             border-radius: 16px 16px 16px 16px;
         }
     }
+   
+    /* Main filter */
+    .main_filter {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+
+    .title_filter {
+        margin-right: 24px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .buttons_filter {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        border: 2px solid #d9d9d9;
+        border-radius: 32px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+   
+    .icons_filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px; 
+        width: 48px;
+        border-radius: 32px;
+        background-color: #deebff;
+        cursor: pointer;
+    }  
+
+    .icon_m {
+        color: #0065fc;
+    } 
+
+    .buttons_description {
+        margin: 0 16px;
+        }   
 
     
-   
